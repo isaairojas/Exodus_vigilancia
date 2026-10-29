@@ -16,8 +16,4 @@ npm run test:flow    # recorrido completo del flujo (con preview corriendo)
 
 El panel de demo (junto al dispositivo) incluye las etiquetas de caja para escanear o copiar, los botones físicos Regresar/Home y las simulaciones (reserva en otra HH, falla del folio, red sin impresoras).
 
-## Documentación
-- `docs/cambios-historias.md`: cambios a llevar a las HU del parcial.
-- `docs/figma/`: inventario, flujos, discrepancias, mapa de nodos y CHANGELOG.
-
 La publicación en GitHub Pages se hace con `.github/workflows/deploy.yml` en cada push a `main`.
