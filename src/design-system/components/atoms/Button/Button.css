@@ -1,0 +1,30 @@
+.ds-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  color: var(--color-blanco);
+  text-align: center;
+}
+
+.ds-button--primary {
+  background: var(--color-primary-azul-300);
+}
+
+.ds-button--danger {
+  background: var(--color-error);
+}
+
+.ds-button--success {
+  background: var(--color-success);
+}
+
+.ds-button:disabled {
+  background: var(--color-disabled);
+  cursor: default;
+}

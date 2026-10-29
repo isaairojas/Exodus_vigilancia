@@ -1,0 +1,39 @@
+.ds-estado {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ds-estado__punto {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.ds-estado__punto--conectada {
+  background: var(--color-success);
+}
+
+.ds-estado__punto--conectando {
+  background: var(--color-amarillo);
+}
+
+.ds-estado__punto--sin-conexion {
+  background: var(--color-error);
+}
+
+.ds-estado__texto {
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  color: var(--color-negro);
+  white-space: nowrap;
+}
+
+.ds-estado__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}

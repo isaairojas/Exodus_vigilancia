@@ -1,0 +1,96 @@
+.ds-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 10px 10px 10px 13px;
+  background: var(--color-blanco);
+  border: 1px solid var(--color-negro);
+  border-radius: var(--radius-sm);
+  cursor: text;
+}
+
+.ds-field__label {
+  position: absolute;
+  left: 8px;
+  top: -8px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  background: var(--color-blanco);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  color: var(--color-negro);
+  white-space: nowrap;
+}
+
+.ds-field__input {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-weight: var(--font-weight-regular);
+  line-height: normal;
+  color: var(--color-negro);
+}
+
+.ds-field__value {
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  color: var(--color-negro);
+  white-space: nowrap;
+}
+
+.ds-field__select {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* DROPDOWN (I2:148;575:4185): 13×6, rotado 180° */
+.ds-field__dropdown {
+  position: absolute;
+  right: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 6px;
+  pointer-events: none;
+}
+
+.ds-field__dropdown-inner {
+  position: absolute;
+  inset: 0;
+  transform: rotate(180deg);
+}
+
+.ds-field__dropdown-inner img {
+  position: absolute;
+  top: 0;
+  bottom: 25%;
+  left: 6.7%;
+  right: 6.7%;
+  width: 86.6%;
+  height: 75%;
+}
+
+/* Botón de ojo de contraseña (2:147) */
+.ds-field__trailing-btn {
+  position: absolute;
+  right: 17.92px;
+  top: calc(50% + 0.05px);
+  transform: translateY(-50%);
+  width: 21.138px;
+  height: 18.09px;
+}
+
+.ds-field__trailing-btn img {
+  width: 100%;
+  height: 100%;
+}

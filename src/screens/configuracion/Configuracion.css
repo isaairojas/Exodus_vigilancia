@@ -1,0 +1,207 @@
+.config {
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary-azul-300);
+}
+
+/* "Titulo modulo" (730:6190): título centrado de 46 px con divisor */
+.config__titulo-bloque {
+  flex-shrink: 0;
+  width: 100%;
+  height: 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 23px;
+}
+
+.config__titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  color: var(--color-negro);
+  white-space: nowrap;
+}
+
+/* 730:5269: tarjetas de configuración separadas por Line 9 */
+.config__lista {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.config__lista > * + * {
+  border-top: 1px solid var(--color-divider);
+}
+
+/* 730:6204 Procesos impresión */
+.config__procesos {
+  flex: 1 0 0;
+  min-height: 1px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.config__procesos > * {
+  border-bottom: 1px solid var(--color-divider);
+}
+
+/* 730:6549: "MIS IMPRESORAS" + EDITAR */
+.config__encabezado {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  color: var(--color-inactive-text-config);
+  text-transform: uppercase;
+}
+
+.config__contenido {
+  flex: 1 0 0;
+  min-height: 1px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 730:5452 "Seleccione una impresora" + indicador de carga */
+.config__seleccione {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  color: var(--color-negro);
+}
+
+.config__cargando {
+  animation: config-giro 1s linear infinite;
+}
+
+@keyframes config-giro {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* 730:5307: contenedor vacío mientras carga */
+.config__placeholder {
+  flex-shrink: 0;
+  width: 100%;
+  height: 50px;
+  background: var(--color-surface-gris);
+  border-radius: var(--radius-lista);
+}
+
+/* Modal de proceso (730:6223) */
+.config__etiqueta {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  color: var(--color-negro);
+}
+
+.config__desde {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px 18px;
+  background: var(--color-surface-gris);
+  border-radius: var(--radius-lista);
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  color: var(--color-negro);
+}
+
+.config__desde--vacio {
+  color: var(--color-inactive-text-config);
+}
+
+.config__desde p {
+  min-width: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 730:5039: sin impresoras en el modal */
+.config__sin-impresoras {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 55px;
+  background: var(--color-surface-gris);
+  border-radius: 6px; /* figma: 730:5039 */
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  color: var(--color-texto-oscuro);
+}
+
+/* 730:5784: tarjeta de la impresora a agregar */
+.config__nueva {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  background: var(--color-inactive);
+  border-radius: var(--radius-sm);
+  color: var(--color-negro);
+  text-align: center;
+}
+
+.config__nueva-label {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+}
+
+.config__nueva-nombre {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  color: var(--color-primary-azul-300);
+}
+
+.config__nueva-ip {
+  font-size: var(--font-size-ip);
+  line-height: var(--line-height-ip);
+}
+
+.config__texto {
+  width: 100%;
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  color: var(--color-negro);
+}
+
+.config__texto--centro {
+  text-align: center;
+  white-space: pre-line;
+}
+
+/* Botón con ícono a la derecha (730:6213 "Nueva conexión", 730:5044 "Ir a Impresoras") */
+.config__boton-icono {
+  gap: 15px;
+}

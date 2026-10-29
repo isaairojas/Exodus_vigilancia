@@ -1,0 +1,114 @@
+.inicio-sesion {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--color-primary-azul-300) 73.633%, var(--color-login-gradient-start) 99.275%);
+}
+
+.inicio-sesion__logo {
+  position: absolute;
+  left: 75px;
+  top: 106px;
+  width: 329.758px;
+  height: 37.251px;
+}
+
+/* 2:114 */
+.inicio-sesion__back-card {
+  position: absolute;
+  left: 30px;
+  bottom: -78px;
+  width: 420px;
+  height: 646px;
+  background: var(--color-login-back-card);
+  border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
+  box-shadow: var(--shadow-login-back-card);
+}
+
+/* 2:125 Login Component */
+.inicio-sesion__sheet {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 480px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 53px 32px 32px;
+  background: var(--color-blanco);
+  border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
+  filter: var(--shadow-login-sheet);
+  backdrop-filter: blur(5px);
+}
+
+.inicio-sesion__headline {
+  width: 100%;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+  color: var(--color-negro);
+  text-align: center;
+}
+
+.inicio-sesion__subtitle {
+  width: 100%;
+  font-weight: var(--font-weight-thin);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  color: var(--color-negro);
+  text-align: center;
+}
+
+.inicio-sesion__inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.inicio-sesion__version {
+  width: 100%;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  color: var(--color-version-text);
+}
+
+/* 2:151 Log-in photo */
+.inicio-sesion__photo {
+  position: absolute;
+  left: calc(50% - 0.5px);
+  top: -51px;
+  transform: translateX(-50%);
+  width: 101px;
+  height: 101px;
+}
+
+.inicio-sesion__photo-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.inicio-sesion__photo-inner {
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  width: 76px;
+  height: 76px;
+}
+
+.inicio-sesion__photo-inner img {
+  position: absolute;
+  /* inset -2.63% -5.26% -7.89% -5.26% → 84×84 sobre 76×76 */
+  left: -5.26%;
+  top: -2.63%;
+  width: 110.52%;
+  height: 110.52%;
+}

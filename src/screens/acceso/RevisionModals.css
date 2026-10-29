@@ -1,0 +1,79 @@
+.revision-modal__left {
+  text-align: left;
+}
+
+.revision-modal__b1 {
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  white-space: nowrap;
+}
+
+.revision-modal__b2 {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  white-space: nowrap;
+}
+
+.revision-modal__azul {
+  color: var(--color-primary-azul-300);
+}
+
+.revision-modal__destino {
+  max-height: 23px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+}
+
+.revision-modal__destino--flex {
+  flex: 1 0 0;
+  min-width: 1px;
+}
+
+/* 618:12197 */
+.revision-modal__courier {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.revision-modal__logo-box {
+  align-self: stretch;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  background: var(--color-blanco);
+  border-radius: var(--radius-sm);
+}
+
+.revision-modal__courier-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 11px;
+}
+
+.revision-modal__caja-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+/* 476:5029 */
+.revision-modal__embarque {
+  flex-direction: column;
+  gap: 18px;
+}
+
+.revision-modal__embarque-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

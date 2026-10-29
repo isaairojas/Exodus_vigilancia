@@ -1,0 +1,32 @@
+/* 730:6198: fondo Inactive, radio 7, padding 10/7; pestaña activa Azul 300 de 42 px */
+.ds-segmented {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 7px;
+  background: var(--color-inactive);
+  border-radius: var(--radius-segmented);
+}
+
+.ds-segmented__tab {
+  flex: 1 0 0;
+  min-width: 1px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  color: var(--color-inactive-text-config);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ds-segmented__tab--selected {
+  background: var(--color-primary-azul-300);
+  color: var(--color-blanco);
+}

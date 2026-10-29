@@ -1,0 +1,25 @@
+.ds-text-link {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  white-space: nowrap;
+}
+
+.ds-text-link--accent {
+  color: var(--color-primary-azul-300);
+  text-transform: uppercase;
+}
+
+.ds-text-link--plain {
+  color: var(--color-negro);
+}
+
+.ds-text-link:disabled {
+  cursor: default;
+  opacity: 0.5;
+}

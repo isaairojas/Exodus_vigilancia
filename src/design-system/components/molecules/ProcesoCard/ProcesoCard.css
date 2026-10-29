@@ -1,0 +1,84 @@
+/* 730:6205: 88 px, padding 0 12, gap 10 */
+.ds-proceso {
+  flex-shrink: 0;
+  width: 100%;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 12px;
+  background: var(--color-blanco);
+}
+
+.ds-proceso__info {
+  flex: 1 0 0;
+  min-width: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ds-proceso__nombre {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  color: var(--color-negro);
+}
+
+.ds-proceso__impresora {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ds-proceso__impresora-nombre,
+.ds-proceso__sin-asignar {
+  flex: 1 0 0;
+  min-width: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  color: var(--color-negro);
+}
+
+.ds-proceso__sin-asignar {
+  color: var(--color-inactive-text-config);
+}
+
+/* 730:5270: 90 px, padding 10 16, gap 24 */
+.ds-config-card {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 16px;
+  background: var(--color-blanco);
+}
+
+.ds-config-card__texto {
+  flex: 1 0 0;
+  min-width: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+  color: var(--color-negro);
+}
+
+.ds-config-card__titulo {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+}
+
+.ds-config-card__descripcion {
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+}

@@ -1,0 +1,62 @@
+.menu {
+  position: absolute;
+  inset: 0;
+  background: var(--color-blanco);
+}
+
+/* 13:134 */
+.menu__header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 480px;
+  height: 86px;
+  display: flex;
+  align-items: flex-start;
+  padding: 16px 22px;
+  background: var(--color-blanco);
+  border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
+  filter: var(--shadow-menu-header);
+  backdrop-filter: blur(5px);
+}
+
+/* 730:5227 engrane (Frame 155 730:5225: espacio entre título y engrane) */
+.menu__config {
+  margin-left: auto;
+  width: 27.2px;
+  height: 28px;
+}
+
+.menu__title {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-menu-title);
+  line-height: var(--line-height-menu-title);
+  color: var(--color-menu-title);
+  white-space: nowrap;
+}
+
+/* 14:846 Scroll menus */
+.menu__scroll {
+  position: absolute;
+  left: 50%;
+  top: 56px;
+  transform: translateX(-50%);
+  height: 744px;
+  display: flex;
+  align-items: flex-start;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.menu__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.menu__list {
+  width: 480px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

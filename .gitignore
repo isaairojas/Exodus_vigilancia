@@ -1,0 +1,4 @@
+node_modules
+dist
+tests/visual/__diff__
+*.tsbuildinfo

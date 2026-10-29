@@ -1,0 +1,65 @@
+.ds-courier-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 148px;
+  padding: 12px 28px;
+  overflow: hidden;
+  background: var(--color-blanco);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-courier-card);
+}
+
+.ds-courier-card__body {
+  flex: 1 0 0;
+  min-height: 1px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ds-courier-card__body--text {
+  justify-content: center;
+  gap: 20px;
+}
+
+.ds-courier-card__logo-area {
+  height: 94px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ds-courier-card__name {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  color: var(--color-negro);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ds-courier-logo {
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.ds-courier-logo__img--cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ds-courier-logo__img--crop {
+  position: absolute;
+  max-width: none;
+}

@@ -1,0 +1,154 @@
+.revision {
+  position: absolute;
+  inset: 0;
+  background: var(--color-blanco);
+}
+
+/* 139:3543 Titulo modulo */
+.revision__title-block {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+}
+
+.revision__title {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  color: var(--color-negro);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* 558:4628 Opciones paquetería */
+.revision__grid {
+  flex: 1 0 0;
+  min-height: 1px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
+  row-gap: 20px;
+  padding: 2px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.revision__grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* 217:5848 Listado de reportes / 574:8315 Listado de embarques */
+.reportes__listado,
+.embarques__listado {
+  flex: 1 0 0;
+  min-height: 1px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.reportes__listado {
+  gap: 20px;
+}
+
+.embarques__listado {
+  gap: 15px;
+  padding: 2px 0;
+}
+
+.reportes__listado::-webkit-scrollbar,
+.embarques__listado::-webkit-scrollbar {
+  display: none;
+}
+
+/* 565:6582: con embarque en curso la interfaz solo ocupa su contenido */
+.revision__interfaz--embarque {
+  flex: none;
+}
+
+/* 565:6814 cajas del embarque */
+.revision__cajas {
+  flex: 1 1 0;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 24px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.revision__cajas::-webkit-scrollbar {
+  display: none;
+}
+
+/* 558:4705 Interfaz */
+.revision__interfaz {
+  flex: 1 0 0;
+  min-height: 1px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* 558:4734 Escanea una caja */
+.revision__empty {
+  flex: 1 0 0;
+  min-height: 1px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+}
+
+.revision__empty-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+  color: var(--color-empty-state);
+  text-align: center;
+}
+
+.revision__empty-title {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+}
+
+.revision__empty-body {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  white-space: pre-wrap;
+}
+
+/* Figma: -scale-y-100 + rotate-180 → espejo horizontal */
+.revision__empty-icon {
+  transform: scaleX(-1);
+}
+
+/* Sin entregas en la fecha (sin respaldo en Figma): estilo del estado vacío 558:4735 */
+.reportes__vacio {
+  padding-top: 40px;
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  color: var(--color-empty-state);
+  text-align: center;
+}

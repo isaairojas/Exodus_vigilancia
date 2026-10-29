@@ -1,0 +1,40 @@
+.ds-scan-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 480px;
+  height: 124px;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 30px 32px 37px;
+  background: var(--color-blanco);
+  border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
+  filter: var(--shadow-scan-bar);
+  backdrop-filter: blur(5px);
+}
+
+.ds-scan-bar__keyboard {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+}
+
+/* Input (565:6621): fondo blanco, borde negro interior de 1 px, opacidad 0.8 */
+.ds-scan-bar__input {
+  flex: 1 0 0;
+  min-width: 1px;
+  height: 50px;
+  padding: 0 14px;
+  background: var(--color-blanco);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: var(--radius-sm);
+  outline: none;
+  font-family: inherit;
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  letter-spacing: 0.5px;
+  color: var(--color-negro);
+}

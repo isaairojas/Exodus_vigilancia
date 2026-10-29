@@ -1,0 +1,91 @@
+.ds-embarque-row {
+  flex-shrink: 0;
+  width: 416px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Line 2: 1 px #E1E1E1 */
+.ds-embarque-row__divider {
+  width: 416px;
+  height: 0;
+  border-top: 1px solid var(--color-divider); /* Divider · I574:8316;289:3557 */
+}
+
+.ds-embarque-row__card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  padding: 12px 11px;
+  overflow: hidden;
+  background: var(--color-blanco);
+}
+
+.ds-embarque-row__cols {
+  flex: 1 0 0;
+  min-width: 1px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.ds-embarque-row__col {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ds-embarque-row__col--destino {
+  position: relative;
+  flex: 1 0 0;
+  min-width: 1px;
+  align-self: stretch;
+  user-select: none;
+}
+
+/* Tooltip de destino completo (sin respaldo en Figma): estilo del Toast */
+.ds-embarque-row__tooltip {
+  position: absolute;
+  right: 0;
+  top: -6px;
+  z-index: 5;
+  max-width: 300px;
+  padding: 8px 12px;
+  background: var(--color-toast-bg);
+  border-radius: var(--radius-tooltip);
+  box-shadow: var(--shadow-toast);
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  color: var(--color-blanco);
+}
+
+.ds-embarque-row__label {
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  color: var(--color-negro);
+  white-space: nowrap;
+}
+
+.ds-embarque-row__value {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  color: var(--color-negro);
+  white-space: nowrap;
+}
+
+.ds-embarque-row__destino {
+  max-height: 23px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--color-primary-azul-300);
+}
+
+.ds-embarque-row__delete {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}

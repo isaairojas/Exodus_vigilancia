@@ -1,0 +1,30 @@
+.ds-sheet {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 480px;
+  height: 740px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  background: var(--color-blanco);
+  border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
+  backdrop-filter: blur(5px);
+}
+
+/* 139:3542 */
+.ds-sheet--menu {
+  gap: 21px;
+  padding-top: 22px;
+  padding-bottom: 120px;
+  filter: var(--shadow-sheet);
+}
+
+/* 558:4701 / 558:4620 */
+.ds-sheet--module {
+  gap: 22px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sheet-module);
+}

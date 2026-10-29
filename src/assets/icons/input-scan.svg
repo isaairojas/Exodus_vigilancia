@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="351" height="50" viewBox="0 0 351 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Input" opacity="0.8">
+<g id="Rect&#195;&#161;ngulo 3">
+<path d="M0 5C0 2.23858 2.23858 0 5 0H346C348.761 0 351 2.23858 351 5V45C351 47.7614 348.761 50 346 50H5.00001C2.23858 50 0 47.7614 0 45V5Z" fill="white"/>
+<mask id="stroke0_0_91" fill="white">
+<path d="M0 5C0 2.23858 2.23858 0 5 0H346C348.761 0 351 2.23858 351 5V45C351 47.7614 348.761 50 346 50H5.00001C2.23858 50 0 47.7614 0 45V5Z"/>
+</mask>
+<path d="M5.00001 50H346C348.761 50 351 47.7614 351 45V5C351 2.23858 348.761 0 346 0H5C2.23858 0 0 2.23858 0 5V45C0 47.7614 2.23858 50 5.00001 50Z" stroke-width="2" stroke="black" mask="url(#stroke0_0_91)"/>
+</g>
+</g>
+</svg>

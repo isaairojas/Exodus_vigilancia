@@ -1,0 +1,46 @@
+.ds-menu-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+  flex-shrink: 0;
+  width: 100%;
+  height: 320px;
+  margin-bottom: -131px;
+  padding: 75px 40px 0;
+  overflow: hidden;
+  border-radius: var(--radius-sheet);
+  box-shadow: var(--shadow-menu-card);
+  backdrop-filter: blur(5px);
+}
+
+.ds-menu-card--last {
+  margin-bottom: 0;
+}
+
+.ds-menu-card--primary {
+  background: var(--color-primary-azul-300);
+}
+
+.ds-menu-card--alt {
+  background: var(--color-menu-card-alt);
+}
+
+.ds-menu-card__label {
+  width: 180px;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-menu-card);
+  line-height: var(--line-height-menu-card);
+  color: var(--color-blanco);
+  text-align: left;
+  white-space: pre-line;
+}
+
+.ds-menu-card__icon {
+  position: absolute;
+  top: 0;
+  right: -22px;
+  width: 250px;
+  height: 250px;
+  mix-blend-mode: soft-light;
+}

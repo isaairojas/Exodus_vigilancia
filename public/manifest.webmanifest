@@ -1,0 +1,11 @@
+{
+  "name": "Exodus Vigilancia",
+  "short_name": "Vigilancia",
+  "lang": "es-MX",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#1b3892",
+  "icons": []
+}
